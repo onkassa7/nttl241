@@ -1,0 +1,15 @@
+Ce dossier est prévu pour accueillir une copie locale de Bootstrap 5
+(bootstrap.min.css / bootstrap.bundle.min.js), utile si vous voulez que
+le site fonctionne sans dépendre d'un CDN externe.
+
+Par défaut, le site charge Bootstrap 5 depuis le CDN jsDelivr (voir
+includes/header.php et includes/footer.php) : rien à faire, cela
+fonctionne dès la mise en ligne.
+
+Pour une version 100% locale :
+1. Téléchargez Bootstrap 5 sur https://getbootstrap.com/docs/5.3/getting-started/download/
+2. Placez bootstrap.min.css dans BOOTSTRAP/css/
+3. Placez bootstrap.bundle.min.js dans BOOTSTRAP/js/
+4. Remplacez les balises CDN dans includes/header.php et includes/footer.php par :
+   <link rel="stylesheet" href="/BOOTSTRAP/css/bootstrap.min.css">
+   <script src="/BOOTSTRAP/js/bootstrap.bundle.min.js"></script>
